@@ -9,7 +9,6 @@ body {
     height: 920px;   
     margin: auto;
     background-color: hsl(204, 43%, 93%);
-    border: 2px solid red;
 }
 .col1{
     width: 325px;
@@ -18,6 +17,8 @@ body {
     background-color: hsl(0, 0%, 100%);
     border-top-left-radius: 5px;
     border-top-right-radius: 5px;
+    box-shadow: 1px 8px 30px 16px hsl(203, 38%, 87%);
+    
 }
 .head1 {
     font-size: 20px;
@@ -92,6 +93,7 @@ button {
     font-family: 'Karla', sans-serif;
     border-bottom-left-radius: 5px;
     border-bottom-right-radius: 5px;
+    box-shadow: 0px 9px 14px 9px hsl(203, 38%, 87%);
 }
 .head3 {
     font-size: 20px;
@@ -100,9 +102,86 @@ button {
     color: hsl(0, 0%, 100%);
 }
 .para2 {
-    font-size: 16px;
+    font-size: 14px;
     font-family: 'Karla', sans-serif;
     color: hsl(204, 43%, 93%);
     padding: 20px 0 0 20px;
     line-height: 20px;
+}
+
+@media (min-width:1440px) {
+    body {
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .page-wraper {
+        width: 1440px;
+        height: 1000px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+    }
+    .col1{
+        width: 600px;
+        height: 220px;
+        position: absolute;
+        top: 180px;
+        left: 420px;
+        right: 420px;
+        box-shadow: 1px 8px 30px 16px hsl(203, 38%, 87%);
+    }
+    .head1 {
+        font-size: 20px;
+        font-family: 'Karla', sans-serif;
+        font-weight: 700;
+        color: hsl(179, 62%, 43%);
+        padding: 40px 20px 0 20px;
+    }
+    .head {
+        font-size: 16px;
+        font-family: 'Karla', sans-serif;
+        font-weight: 700;
+        padding: 30px 0 0 20px;
+        color: hsl(71, 73%, 54%);
+    }
+    .para {
+        font-size: 14px;
+        padding: 15px 75px 0 20px;
+    }
+    .col2 {
+        width: 300px;
+        height: 260px;
+        position: absolute;
+        top: 480px;
+        left: 420px;
+        border-bottom-left-radius: 5px;
+        box-shadow: -5px 8px 11px 8px hsl(203, 38%, 87%);
+    }
+    button {
+        padding: 15px 100px 15px 100px;
+        margin-top: 25px;
+    }
+    .col3 {
+        width: 300px;
+        height: 260px;
+        border-bottom-left-radius: 0;
+        border-bottom-right-radius: 5px;
+        position: absolute;
+        top: 480px;
+        right: 420px;
+        box-shadow: 14px 10px 18px 5px hsl(203, 38%, 87%);
+    }
+    .head3 {
+        font-size: 20px;
+        font-weight: 700;
+        padding: 30px 0 0 20px;
+        color: hsl(0, 0%, 100%);
+    }
+    .para2 {
+        font-size: 14px;
+        line-height: 22px;
+    }
 }
